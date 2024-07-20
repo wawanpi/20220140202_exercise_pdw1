@@ -1,0 +1,182 @@
+/* Mengatur margin dan padding default untuk elemen-elemen umum */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengatur gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Gaya untuk header, termasuk background, warna teks, padding, dan shadow */
+header {
+    background: #4C2A1D; /* Warna background header */
+    color: #fff; /* Warna teks header */
+    padding: 15px 30px; /* Padding di dalam header */
+    display: flex; /* Menyusun item header secara fleksibel */
+    justify-content: space-between; /* Menyebar item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow pada header */
+}
+
+/* Gaya untuk logo di dalam header */
+.logo {
+    font-size: 26px; /* Ukuran font logo */
+    font-weight: bold; /* Menebalkan font logo */
+}
+
+/* Mengatur gaya untuk menu navigasi dalam header */
+nav ul {
+    list-style: none; /* Menghapus bullet points pada list */
+    display: flex; /* Menyusun item menu secara fleksibel */
+}
+
+nav ul li {
+    margin: 0 15px; /* Menambahkan jarak horizontal antar item menu */
+}
+
+/* Gaya untuk tautan menu navigasi */
+nav ul li a {
+    color: #fff; /* Warna teks tautan */
+    text-decoration: none; /* Menghapus underline dari tautan */
+    font-weight: 500; /* Menetapkan ketebalan font tautan */
+    transition: color 0.3s ease; /* Efek transisi warna saat hover */
+}
+
+nav ul li a:hover {
+    color: #d2691e; /* Warna teks tautan saat hover */
+}
+
+/* Gaya untuk ikon keranjang belanja di header */
+.cart-icons img {
+    width: 24px; /* Ukuran ikon */
+    margin-left: 15px; /* Jarak horizontal antar ikon */
+    transition: opacity 0.3s ease; /* Efek transisi opacity saat hover */
+}
+
+.cart-icons img:hover {
+    opacity: 0.8; /* Opacity ikon saat hover */
+}
+
+/* Gaya untuk section hero dengan video background */
+.hero {
+    position: relative; /* Memungkinkan posisi relatif untuk elemen anak */
+    height: 100vh; /* Mengatur tinggi section sesuai viewport */
+    overflow: hidden; /* Menyembunyikan overflow dari konten */
+    color: #fff; /* Warna teks untuk section hero */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+/* Gaya untuk video background */
+#bg-video {
+    position: absolute; /* Posisi absolut untuk video background */
+    top: 50%; /* Mengatur video di tengah vertikal */
+    left: 50%; /* Mengatur video di tengah horizontal */
+    width: 100%; /* Memenuhi lebar container */
+    height: 100%; /* Memenuhi tinggi container */
+    object-fit: cover; /* Memastikan video mengisi area tanpa distorsi */
+    transform: translate(-50%, -50%); /* Mengatur posisi video ke tengah */
+    z-index: -1; /* Menempatkan video di bawah konten lainnya */
+}
+
+/* Gaya untuk konten dalam section hero */
+.hero .content {
+    position: relative; /* Memungkinkan posisi relatif untuk konten */
+    z-index: 1; /* Menempatkan konten di atas video */
+    padding: 120px 20px; /* Padding untuk konten */
+}
+
+/* Gaya untuk judul di dalam section hero */
+.hero h1 {
+    font-size: 56px; /* Ukuran font judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+    font-weight: bold; /* Menebalkan font judul */
+}
+
+/* Gaya untuk paragraf di dalam section hero */
+.hero p {
+    font-size: 22px; /* Ukuran font paragraf */
+    margin-bottom: 30px; /* Jarak bawah paragraf */
+}
+
+/* Gaya untuk tombol di dalam section hero */
+.hero button {
+    background: #d2691e; /* Warna background tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus border tombol */
+    padding: 15px 30px; /* Padding di dalam tombol */
+    cursor: pointer; /* Mengubah cursor saat hover tombol */
+    font-size: 20px; /* Ukuran font tombol */
+    border-radius: 5px; /* Radius border tombol */
+    transition: background 0.3s ease, transform 0.3s ease; /* Efek transisi untuk background dan transformasi */
+}
+
+.hero button:hover {
+    background: #a0522d; /* Warna background tombol saat hover */
+    transform: scale(1.05); /* Memperbesar tombol saat hover */
+}
+
+/* Gaya dasar untuk section about dan catalog */
+.about, .catalog {
+    padding: 40px 20px; /* Padding di dalam section */
+    color: #333; /* Warna teks default */
+}
+
+/* Gaya untuk section about */
+.about {
+    background-color: #b9b9b7; /* Warna background section about */
+}
+
+.about .content {
+    display: flex; /* Menyusun item section about secara fleksibel */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    gap: 20px; /* Jarak antar item */
+}
+
+.about .content img {
+    width: 350px; /* Lebar gambar */
+    height: auto; /* Tinggi gambar otomatis untuk menjaga proporsi */
+    border-radius: 10px; /* Radius border gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow pada gambar */
+}
+
+/* Gaya untuk section catalog */
+.catalog {
+    background-color: #3aa9bf; /* Warna background section catalog */
+}
+
+.catalog h2 {
+    margin-bottom: 20px; /* Jarak bawah judul */
+    font-size: 36px; /* Ukuran font judul */
+    font-weight: bold; /* Menebalkan font judul */
+    text-align: center; /* Menyelaraskan judul ke tengah */
+}
+
+/* Gaya untuk item-item katalog */
+.catalog .catalog-items {
+    display: flex; /* Menyusun item secara fleksibel */
+    justify-content: center; /* Menyelaraskan item ke tengah */
+    flex-wrap: wrap; /* Memungkinkan item membungkus ke baris berikutnya */
+    gap: 20px; /* Jarak antar item */
+}
+
+.catalog .catalog-item {
+    text-align: center; /* Menyelaraskan teks item ke tengah */
+    background: #fff; /* Warna background item */
+    border-radius: 10px; /* Radius border item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow pada item */
+    padding: 15px; /* Padding di dalam item */
+    width: 250px; /* Lebar item */
+}
+
+.catalog .catalog-item img {
+    width: 100%; /* Lebar gambar sesuai dengan lebar item */
+    height: auto; /* Tinggi gambar otomatis untuk menjaga proporsi */
+    border-radius: 10px; /* Radius border gambar */
+}
+
+.catalog .catalog-item p {
+    margin: 10px 0; /* Jarak atas dan bawah paragraf */
+}

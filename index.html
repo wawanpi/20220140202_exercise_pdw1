@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Fal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS eksternal -->
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="bck.mp4" type="video/mp4"> <!-- Video background -->
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Cars Fal</div> <!-- Logo di sebelah kiri navbar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li> <!-- Link navigasi ke halaman utama -->
+                <li><a href="#">Tentang Kami</a></li> <!-- Link navigasi ke halaman tentang kami -->
+                <li><a href="#">Menu</a></li> <!-- Link navigasi ke halaman menu -->
+                <li><a href="#">Kontak</a></li> <!-- Link navigasi ke halaman kontak -->
+            </ul>
+        </nav>
+        <div class="cart-icons">
+            <a href="#"><img src="search-icon.png" alt="Search"></a> <!-- Ikon pencarian -->
+            <a href="#"><img src="cart-icon.png" alt="Cart"></a> <!-- Ikon keranjang belanja -->
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Section 1: Hero Section -->
+        <section class="hero">
+            <div class="content">
+                <h1>Mari Membeli Mobil Impian Anda</h1> <!-- Judul hero section -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, esi.</p> <!-- Deskripsi hero section -->
+                <button onclick="showAlert()">Beli Sekarang</button> <!-- Tombol dengan fungsi JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section 2: About Us -->
+        <section class="about">
+            <h2>Tentang Kami</h2> <!-- Judul section tentang kami -->
+            <div class="content">
+                <img src="Logo.jpg" alt="Coffee Image"> <!-- Gambar terkait tentang kami -->
+                <div class="text">
+                    <h3>Kenapa Memilih Toko Kami</h3> <!-- Subjudul tentang alasan memilih toko -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque officiis, quidem perferendis dignissimos quibusdam.</p> <!-- Paragraf informasi tentang toko -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus nihil laborum esse officiis quae fuga dolores corporis molestias aliquam!</p> <!-- Paragraf tambahan informasi -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Catalog -->
+        <section class="catalog">
+            <h2>Katalog</h2> <!-- Judul section katalog -->
+            <div class="catalog-items">
+                <div class="catalog-item">
+                    <img src="1.jpg" alt="Mclaren 570S 2024"> <!-- Gambar item katalog -->
+                    <p>Mclaren 570S 2024</p> <!-- Nama item -->
+                    <p>IDR 4.500.000.000</p> <!-- Harga item -->
+                </div>
+                <div class="catalog-item">
+                    <img src="2.jpg" alt="Mclaren 720S"> <!-- Gambar item katalog -->
+                    <p>Mclaren 720S</p> <!-- Nama item -->
+                    <p>IDR 6.500.000.000</p> <!-- Harga item -->
+                </div>
+                <div class="catalog-item">
+                    <img src="3.jpg" alt="Mclaren Senna 2024"> <!-- Gambar item katalog -->
+                    <p>Mclaren Senna 2024</p> <!-- Nama item -->
+                    <p>IDR 3.700.000.000</p> <!-- Harga item -->
+                </div>
+                <div class="catalog-item">
+                    <img src="4.jpg" alt="McLaren 765LT"> <!-- Gambar item katalog -->
+                    <p>McLaren 765LT</p> <!-- Nama item -->
+                    <p>IDR 7.900.000.000</p> <!-- Harga item -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript eksternal -->
+</body>
+</html>
